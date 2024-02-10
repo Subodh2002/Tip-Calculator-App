@@ -207,6 +207,20 @@ function resetAll() {
     personError.textContent="";
     outputTip.textContent="$0.00";
     outputTotal.textContent="$0.00";
+    tip5.style.backgroundColor="";
+    tip5.style.color="";
+
+    tip10.style.backgroundColor="";
+    tip10.style.color="";
+
+    tip15.style.backgroundColor="";
+    tip15.style.color="";
+
+    tip25.style.backgroundColor="";
+    tip25.style.color="";
+
+    tip50.style.backgroundColor="";
+    tip50.style.color=""
 }
 
 
