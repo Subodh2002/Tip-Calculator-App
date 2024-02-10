@@ -1,0 +1,238 @@
+:root{
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+    --Strong-cyan: hsl(172, 67%, 45%);
+}
+
+body{
+    width: 90%;
+    background-color: var(--Light-grayish-cyan);
+    font-family: 'Space Mono', monospace;
+    padding: 11rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 8rem;
+
+}
+.logo{
+    margin-bottom: 5rem;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  padding: 1.6rem;
+  background-color: white;
+  gap: 2rem;
+  border-radius: 20px;
+  box-shadow: 1px 20px 100px rgba(0, 0, 0, 0.329);
+
+}
+.left-h{
+    font-size: 12px;
+    color: var(--Dark-grayish-cyan);
+    font-weight: 600;
+
+}
+.bill{
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.bill>.dollar{
+    position: absolute;
+    top: 3.1rem;
+    left: 10px;
+}
+.people{
+    position: relative;
+}
+.people>.person{
+    position: absolute;
+    top: 3.1rem;
+    left: 10px;
+}
+.inputs{
+    display: block;
+    text-align: right;
+    border: none;
+    background-color: var(--Very-light-grayish-cyan);
+    width: 17.6rem;
+    color: var(--Very-dark-cyan);
+    height: 2.2rem;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 15px;
+    padding: 0 10px;
+    outline: none;
+    margin-top: 1rem;
+
+}
+.inputs::placeholder{
+    font-family: 'Space Mono', monospace;
+    color: var(--Grayish-cyan);
+
+}
+.inputs:focus{
+    border: 2px solid var(--Strong-cyan);
+}
+.grid-div{
+    display: grid;
+    grid-template-columns: 6rem  6rem 6rem;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.tip{
+    height: 2rem;
+    border: none;
+}
+.tip-btn{
+    height: 2.4rem;
+    color: white;
+    background-color: var(--Very-dark-cyan);
+    font-size: 1rem;
+    font-family: 'Space Mono', monospace;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+.tip-btn:focus{
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+    font-weight: 600;
+}
+#custom{
+    background-color: var(--Very-light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+    font-weight: 800;
+    font-size: 17px;
+    text-align: right;
+    outline: none;
+    border-radius: 5px;
+
+}
+#custom:focus{
+    border: 2px solid var(--Strong-cyan);
+}
+#custom::placeholder{
+    color: var(--Grayish-cyan);
+    text-align: center;
+}
+.select-tip{
+    margin-bottom: 2rem;
+}
+#right{
+    background-color: var(--Very-dark-cyan);
+    padding: 1.4rem;
+    color: white;
+    border-radius: 14px;
+}
+#right>#output{
+    display: flex;
+    gap: 6rem;
+}
+.output-tip{
+    margin-top: 1rem;
+}
+.output-total{
+    margin-top:1rem ;
+}
+#right h5{
+    margin-bottom: 0;
+
+}
+#right span{
+font-size: 2rem;
+display: block;
+color: var(--Strong-cyan);
+}
+#right small{
+    margin: 0;
+    font-size: 12px;
+    color: var(--Grayish-cyan);
+}
+.reset-btn{
+    margin-top: 6rem;
+    margin-left: 0.6rem;
+    width: 16rem;
+    height: 2.6rem;
+    background-color: var(--Light-grayish-cyan);
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.reset-btn:focus{
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+
+}
+.person-input-error{
+    color: red;
+    margin-left: 1rem;
+}
+
+@media(max-width:580px){
+    body{
+        width:96%;
+        padding: 0;
+        justify-content: left;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1rem 2.1rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .logo{
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    .grid-div{
+        display: grid;
+        grid-template-columns: 9rem  9rem ;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .reset-btn{
+        margin-top: 1.4rem;
+        margin-left: 0.5rem;
+        width: 16rem;
+        height: 2.6rem;
+        background-color: var(--Light-grayish-cyan);
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    #right{
+        background-color: var(--Very-dark-cyan);
+        padding: 1rem  1rem;
+        color: white;
+        border-radius: 14px;
+    }
+    #right>#output{
+        gap:5rem;
+    }
+    .output-tip{
+        margin-top: 1rem;
+    }
+    .output-total{
+        margin-top:2rem ;
+    }
+
+    #right span{
+        font-size: 1.5rem;
+    }
+}
